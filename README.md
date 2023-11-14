@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project info:
+* Ruby version 3.2.2
+* Link to project description: https://www.theodinproject.com/lessons/ruby-on-rails-stimulus
 
-Things you may want to cover:
+This app makes use of:
+* 
 
-* Ruby version
+Misc terminal setup:
+* rails new stimulus-exercise --database=postgresql
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project could be improved:
+* 
