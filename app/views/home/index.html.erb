@@ -1,7 +1,43 @@
 <h1>Hello, Stimulus!</h1>
 
-<div data-controller="hello">
-  <input data-target="hello.name" type="text">
-  <button data-action="click->hello#greet">Greet</button>
-  <span data-target="hello.output"></span>
+<div data-controller="toggle">
+
+  <h2>Example one</h2>
+  
+  <input data-toggle-target="input" type="text">
+  <button data-action="click->toggle#greet">Greet</button>
+  <span data-toggle-target="output"></span>
+
+  <h2>Example two</h2>
+
+  <button data-action="click->toggle#dropdown">Toggle Dropdown</button>
+  <ul data-toggle-target="list" hidden=true>
+    <li>List Item one</li>
+    <li>List Item two</li>
+    <li>List Item three</li>
+    <li>List Item four</li>
+  </ul>
+
+  <h2>Example three</h2>
+
+  <button data-toggle-target="secretButton" data-action="click->toggle#replace">Do not click</button>
+  <span data-toggle-target="secretMessage" hidden=true>You were not supposed to click the button.</span>
+
+  <h2>Example four</h2>
+
+  <div data-toggle-target="buttonContainer" style="padding-top: 20px; padding-bottom: 20px">
+    <button data-action="click->toggle#highlight">Toggle container highlight</button>
+  </div>
+
+  <h2>Example five</h2>
+
+  <div data-controller = "input" data-input-target = "textContainer">
+    <textarea rows = 4
+              maxlength = 280 
+              placeholder = '280 character max'
+              data-input-target = 'textareaInput'
+              data-action = "input#checkLength"></textarea>
+    <span data-input-target = 'textAlert'></span>
+  </div>
+
 </div>
